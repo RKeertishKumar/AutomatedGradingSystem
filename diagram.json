@@ -1,0 +1,19 @@
+{
+    "nodes": [
+      {"id": "start", "type": "start", "text": "Begin algorithm"},
+      {"id": "n1", "type": "process", "text": "Initialize i to 0"},
+      {"id": "n2", "type": "decision", "text": "Is i < 10?"},
+      {"id": "n3", "type": "process", "text": "Print i"},
+      {"id": "n4", "type": "process", "text": "Increment i by 1"},
+      {"id": "end", "type": "end", "text": "End algorithm"}
+    ],
+    "edges": [
+      {"from": "start", "to": "n1"},
+      {"from": "n1", "to": "n2"},
+      {"from": "n2", "to": "n3", "condition": "yes"},
+      {"from": "n3", "to": "n4"},
+      {"from": "n4", "to": "n2"},
+      {"from": "n2", "to": "end", "condition": "no"}
+    ]
+  }
+  
